@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<input type="button" value="First click me"  id="myButton1" onclick="display2ndBut()"/>
+<input type="button" value="Second click me"  id="myButton" onclick="displayDate()" style="display:none" />
+<script>
+	var myButton = document.getElementById("myButton");
+		
+	
+	function display2ndBut(){
+		setTimeout(function(){myButton.style.display=""}, 10000)
+	}
+	function displayDate() 
+	{
+	console.log("hello")
+  	myButton.value = new Date();
+	}
+	
+   
+
+</script>
+</body>
+</html>
+
